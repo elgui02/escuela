@@ -19,8 +19,6 @@ class PersonalType extends AbstractType
             ->add('Documento')
             ->add('Logros')
             ->add('Observacion')
-            ->add('Usuario_id')
-            ->add('usuario')
         ;
     }
     
