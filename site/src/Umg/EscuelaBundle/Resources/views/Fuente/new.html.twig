@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+	
+    <h2 class="clr-6 p4">Nueva fuente</h2>
+    <strong>
+    {{ form(form,{'id': 'form'}) }}
+    </strong>
+	<strong class="clear"></strong>
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('fuente') }}" class="link-2">
+            regresar a la lista
+        </a>
+    </li>
+</ul>
+{% endblock %}

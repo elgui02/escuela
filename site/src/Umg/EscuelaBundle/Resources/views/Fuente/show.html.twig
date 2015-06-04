@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h2 class="clr-6 p4">Fuente</h2>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.Nombre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('fuente') }}" class="link-2">
+            Regresar a la lista
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('fuente_edit', { 'id': entity.id }) }}" class="btns pad-2">
+            Editar
+        </a>
+    </li>
+</ul>
+{% endblock %}

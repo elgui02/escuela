@@ -1,0 +1,46 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h2 class="clr-6 p4">Lista de insumos</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Fuente</th>
+                <th>Categoria</th>
+                <th>Actiones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('insumo_show', { 'id': entity.id }) }}">{{ entity.Codigo }}</a></td>
+                <td>{{ entity.Nombre }}</td>
+                <td>{{ entity.Cantidad }}</td>
+                <td>{{ entity.Fuente }}</td>
+                <td>{{ entity.Categorium }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('insumo_show', { 'id': entity.id }) }}">ver</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('insumo_edit', { 'id': entity.id }) }}">editar</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('insumo_new') }}" class="link-2">
+                Nuevo insumo
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

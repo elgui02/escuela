@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+	<h2 class="clr-6 p4">Nuevo insumo</h2>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('insumo') }}" class="link-2">
+            Regresar a la lista
+        </a>
+    </li>
+</ul>
+{% endblock %}

@@ -1,0 +1,43 @@
+umg_escuela_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UmgEscuelaBundle:Default:index }
+
+Fuente_home:
+    resource: "@UmgEscuelaBundle/Controller/FuenteController.php"
+    type: annotation
+
+Categoria_home:
+    resource: "@UmgEscuelaBundle/Controller/CategoriumController.php"
+    type: annotation
+
+Insumo_home:
+    resource: "@UmgEscuelaBundle/Controller/InsumoController.php"
+    type: annotation
+
+InsumoPersonal_home:
+    resource: "@UmgEscuelaBundle/Controller/InsumoPersonalController.php"
+    type: annotation
+
+Personal_home:
+    resource: "@UmgEscuelaBundle/Controller/PersonalController.php"
+    type: annotation
+
+Salon_home:
+    resource: "@UmgEscuelaBundle/Controller/SalonController.php"
+    type: annotation
+
+AlumnoSalon_home:
+    resource: "@UmgEscuelaBundle/Controller/AlumnoSalonController.php"
+    type: annotation
+
+Alumno_home:
+    resource: "@UmgEscuelaBundle/Controller/AlumnoController.php"
+    type: annotation
+
+AlumnoResponsable_home:
+    resource: "@UmgEscuelaBundle/Controller/AlumnoResponsableController.php"
+    type: annotation
+
+Responsable_home:
+    resource: "@UmgEscuelaBundle/Controller/ResponsableController.php"
+    type: annotation
