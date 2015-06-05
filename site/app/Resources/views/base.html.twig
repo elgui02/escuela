@@ -33,6 +33,7 @@
                 })      
             });
         </script>
+         {{ tinymce_init() }}
         <!--[if lt IE 8]>
            <div style=' clear: both; text-align:center; position: relative;'>
              <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -70,6 +71,7 @@
                 <h2 class="top-1 p2">Menu</h2>
                 <ul>
                     <li><a href="index.html" class="link-2">Home</a></li>
+                    <li><a href="{{path('articulo')}}" class="link-2">Artículos</a></li>
                     <li><a href="{{path('fuente')}}" class="link-2">Fuentes</a></li>
                     <li><a href="{{path('categoria')}}" class="link-2">Categoria</a></li>
                     <li><a href="{{path('insumo')}}" class="link-2">Insumos</a></li>

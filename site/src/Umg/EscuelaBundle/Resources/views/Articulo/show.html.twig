@@ -1,0 +1,35 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h2 class="link-2">Articulo</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.Nombre }}</td>
+            </tr>
+            <tr>
+                <th>Articulo</th>
+                <td>
+    
+
+                {{ entity.Articulo|raw}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('articulo') }}" class="link-2">
+            Regresar al listado
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('articulo_edit', { 'id': entity.id }) }}" class="link-2">
+            Editar
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

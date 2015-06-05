@@ -41,3 +41,7 @@ AlumnoResponsable_home:
 Responsable_home:
     resource: "@UmgEscuelaBundle/Controller/ResponsableController.php"
     type: annotation
+
+Articulo_home:
+    resource: "@UmgEscuelaBundle/Controller/ArticuloController.php"
+    type: annotation
